@@ -138,5 +138,5 @@ return [
     'es',
     'se',
     'me',
-    'te'
+    'te',
 ];
