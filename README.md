@@ -15,12 +15,19 @@ composer require rap2hpoutre/remove-stop-words
 
 ## Usage
 
+Just call the `remove_stop_words` function with a string.
+
 ```php
 use function Rap2hpoutre\RemoveStopWords\remove_stop_words;
 
 echo remove_stop_words('The quick brown fox jumps over the lazy dog');
 // quick brown fox jumps   lazy dog
+```
+You can provide a locale as a second argument:
 
-echo remove_stop_words('Portez ce vieux whisky au juge blond qui fume');
+```php
+use function Rap2hpoutre\RemoveStopWords\remove_stop_words;
+
+echo remove_stop_words('Portez ce vieux whisky au juge blond qui fume', 'fr');
 // Portez  vieux whisky  juge blond  fume
 ```
