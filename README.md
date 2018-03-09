@@ -1,6 +1,5 @@
 # Remove stop words
 
-[![Packagist](https://img.shields.io/packagist/v/rap2hpoutre/remove-stop-words.svg)](https://packagist.org/packages/rap2hpoutre/remove-stop-words)
 [![Packagist](https://img.shields.io/packagist/l/rap2hpoutre/remove-stop-words.svg)](https://packagist.org/packages/rap2hpoutre/remove-stop-words)
 [![Build Status](https://travis-ci.org/rap2hpoutre/remove-stop-words.svg?branch=master)](https://travis-ci.org/rap2hpoutre/remove-stop-words)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/?branch=master)
