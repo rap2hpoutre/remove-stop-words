@@ -1,0 +1,24 @@
+{
+    "name": "rap2hpoutre/remove-stop-words",
+    "description": "Remove stop words from a string or an array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rap2h",
+            "email": "raphaelht@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^7.0.2"
+    },
+    "autoload": {
+        "files": ["src/remove_stop_words.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rap2hpoutre\\RemoveStopWords\\Tests\\": "tests/"
+        }
+    }
+}
