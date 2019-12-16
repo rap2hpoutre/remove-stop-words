@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/rap2hpoutre/remove-stop-words.svg?branch=master)](https://travis-ci.org/rap2hpoutre/remove-stop-words)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/?branch=master)
 
-Remove stop words from a string. It currently works in French and English. Feel free to submit a Pull Request if you want to include your language.
+Remove stop words from a string. It currently works in French, Spanish and English. Feel free to submit a Pull Request if you want to include your language.
 
 ## Installation
 
