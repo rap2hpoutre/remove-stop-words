@@ -139,4 +139,9 @@ return [
     'se',
     'me',
     'te',
+    'qu',
+    'd',
+    'vos',
+    'aux',
+    'ai'
 ];

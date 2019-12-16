@@ -75,7 +75,7 @@ return [
     'arriba',
     'encima',
     'debajo',
-    'de'
+    'de',
     'de nuevo',
     'mas alla',
     'entonce',
