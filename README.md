@@ -9,7 +9,7 @@ Remove stop words from a string. It currently works in French, Spanish and Engli
 ## Installation
 
 ```bash
-composer require rap2hpoutre/remove-stop-words
+composer require entervpl/remove-stop-words
 ```
 
 ## Usage
