@@ -3,18 +3,12 @@
     "description": "Remove stop words from a string",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "rap2h",
-            "email": "raphaelht@gmail.com"
-        }
-    ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.0|^8.0"
+        "php": "^7.0 || ^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5 || ^7.0.2"
+        "phpunit/phpunit": "^10"
     },
     "autoload": {
         "files": ["src/remove_stop_words.php"]
