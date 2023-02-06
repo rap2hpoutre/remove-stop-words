@@ -1,5 +1,5 @@
 {
-    "name": "rap2hpoutre/remove-stop-words",
+    "name": "entervpl/remove-stop-words",
     "description": "Remove stop words from a string",
     "type": "library",
     "license": "MIT",
