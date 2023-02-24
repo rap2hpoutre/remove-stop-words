@@ -1,27 +1,24 @@
 {
-    "name": "rap2hpoutre/remove-stop-words",
+    "name": "entervpl/remove-stop-words",
     "description": "Remove stop words from a string",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "rap2h",
-            "email": "raphaelht@gmail.com"
-        }
-    ],
     "minimum-stability": "stable",
+    "version": "0.1.0-dev",
     "require": {
-        "php": "^7.0"
+        "php": "^8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5 || ^7.0.2"
+        "phpunit/phpunit": "^10"
     },
     "autoload": {
-        "files": ["src/remove_stop_words.php"]
+        "psr-4": {
+          "EnterV\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rap2hpoutre\\RemoveStopWords\\Tests\\": "tests/"
+            "EnterV\\Tests\\": "tests/"
         }
     }
 }
