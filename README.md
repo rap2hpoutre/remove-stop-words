@@ -1,10 +1,8 @@
 # Remove stop words
 
-[![Packagist](https://img.shields.io/packagist/l/rap2hpoutre/remove-stop-words.svg)](https://packagist.org/packages/rap2hpoutre/remove-stop-words)
-[![Build Status](https://travis-ci.org/rap2hpoutre/remove-stop-words.svg?branch=master)](https://travis-ci.org/rap2hpoutre/remove-stop-words)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rap2hpoutre/remove-stop-words/?branch=master)
+[![Packagist](https://img.shields.io/packagist/l/entervpl/remove-stop-words.svg)](https://packagist.org/packages/entervpl/remove-stop-words)
 
-Remove stop words from a string. It currently works in French, Spanish and English. Feel free to submit a Pull Request if you want to include your language.
+Remove stop words from a string. It currently works in French, Spanish, English and Polish. Feel free to submit a Pull Request if you want to include your language.
 
 ## Installation
 
@@ -14,19 +12,37 @@ composer require entervpl/remove-stop-words
 
 ## Usage
 
-Just call the `remove_stop_words` function with a string.
-
 ```php
-use function Rap2hpoutre\RemoveStopWords\remove_stop_words;
+use EnterV\RSW\RemoveStopWords;
 
-echo remove_stop_words('The quick brown fox jumps over the lazy dog');
-// quick brown fox jumps   lazy dog
+$string = 'The quick brown fox jumps over the lazy dog';
+$rsw = new RemoveStopWords($string);
+$result = $rsw->remove();
+// $result = quick brown fox jumps   lazy dog
 ```
 You can provide a locale as a second argument:
 
 ```php
-use function Rap2hpoutre\RemoveStopWords\remove_stop_words;
+use EnterV\RSW\Langs;
+use EnterV\RSW\RemoveStopWords;
 
-echo remove_stop_words('Portez ce vieux whisky au juge blond qui fume', 'fr');
-// Portez  vieux whisky  juge blond  fume
+$string = 'Portez ce vieux whisky au juge blond qui fume';
+$rsw = new RemoveStopWords($string, Lang::FR);
+$result = $rsw->remove();
+// $result = Portez  vieux whisky  juge blond  fume
+```
+
+You can also use a list of strings
+
+```php
+use EnterV\RSW\Langs;
+use EnterV\RSW\RemoveStopWords;
+
+$array = [
+    'Portez ce vieux whisky au juge blond qui fume'
+    'Ça plaît à sa majesté'
+];
+$rsw = new RemoveStopWords($array, Lang::FR);
+$result = $rsw->remove();
+// $result = ["Portez  vieux whisky  juge blond  fume", "plaît   majesté"]
 ```
